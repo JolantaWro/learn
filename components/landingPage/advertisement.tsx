@@ -25,7 +25,7 @@ export function Advertisement() {
                             </div>
                             <h3 className='font-bold'>Małe Charaktery</h3>
                             <p className='text-xs mt-4'>To miesięcznik, który uczy dziecko akceptacji przeżywanych przez niego emocji, 
-                                rozwija strefę uczuć i umijętność radzenia sobie z nimi. Wzmacnia wiarę we własne siły, angażując do samodzielności w poszukiwaniu rozwiązań problemów."</p>
+                                rozwija strefę uczuć i umijętność radzenia sobie z nimi. Wzmacnia wiarę we własne siły, angażując do samodzielności w poszukiwaniu rozwiązań problemów.</p>
                             <p className='text-right mt-2 font-bold text-xs'>Nieperfekcyjna mama</p>
                         </div>
                     </div>
