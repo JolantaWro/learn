@@ -10,7 +10,7 @@ export function Advertisement() {
         <>
             <section className='px-4 mt-4'>
                 <div className='bg-zinc-100 pb-4'>
-                    <p className='uppercase text-center font-medium pt-1 text-zinc-600'>Advertisement</p>
+                    <p className='uppercase text-center font-bold pt-1 text-zinc-600'>Advertisement</p>
                     <div className='flex w-full bg-zinc-400 text-zinc-50'>
                         <div className='w-1/2 py-5 pl-5'>
                             <Image alt="Małe charaktery" src={advertisement}  />

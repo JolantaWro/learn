@@ -1,4 +1,5 @@
 import { MainContent } from '@/components/page-content'
+import { MainFooter } from '@/components/page-footer'
 import { MainHeader } from '@/components/page-header'
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="">
       <MainHeader />
       <MainContent />
+      <MainFooter />
     </main>
   )
 }

@@ -18,8 +18,8 @@ export function MainContent() {
                     <h3 className='text-xl '>try it!</h3>
                 </section>
                 <GamesList />
-                <BlogContent />
                 <Advertisement />
+                <BlogContent />
             </div>
         </>
     )
