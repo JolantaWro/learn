@@ -5,7 +5,7 @@ import Link from "next/link";
 import mainView from "../public/puzzle.jpg"
 import { GamesList } from './landingPage/games-list';
 import { Advertisement } from './landingPage/advertisement';
-import { BlogContent } from './landingPage/blog-content.tsx';
+import { BlogContent } from './landingPage/blog-content';
 
 
 export function MainContent() {
