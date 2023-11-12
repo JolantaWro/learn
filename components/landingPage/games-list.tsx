@@ -12,6 +12,7 @@ export function GamesList() {
     return (
         <>
             <section className='px-4 mt-8'>
+                <h3 className='font-bold text-lg text-center border shadow-md'>Popular Games</h3>
                 <div className='border-b-[1px] py-4 border-zinc-400'>
                     <div className='flex h-32'>
                         <Image className="w-1/3 rounded-lg object-cover" alt="abacus" src={counting} />
@@ -39,7 +40,7 @@ export function GamesList() {
                         </div>
                     </div>
                 </div>
-                <div className='border-b-[1px] py-4 border-zinc-400'>
+                <div className='py-4 '>
                     <div className='flex h-32'>
                         <Image className="w-1/3 rounded-lg object-cover" alt="abacus" src={story} />
                         <div className='ml-3'>

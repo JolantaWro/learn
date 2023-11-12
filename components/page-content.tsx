@@ -5,6 +5,7 @@ import Link from "next/link";
 import mainView from "../public/puzzle.jpg"
 import { GamesList } from './landingPage/games-list';
 import { Advertisement } from './landingPage/advertisement';
+import { BlogContent } from './landingPage/blog-content';
 
 
 export function MainContent() {
@@ -17,6 +18,7 @@ export function MainContent() {
                     <h3 className='text-xl '>try it!</h3>
                 </section>
                 <GamesList />
+                <BlogContent />
                 <Advertisement />
             </div>
         </>
