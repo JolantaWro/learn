@@ -31,7 +31,7 @@ export function BlogContent() {
                         </div>
                         <h3 className='font-bold mt-2'>How to teach children English from an early age?</h3>
                         <p className='line-clamp-4 mt-2'>Do you want your child to have a better start in life and catch the bug to learn English from preschool age? 
-                        If you are wondering how to do it so that your child does not get discouraged, but English becomes entertainment for him - you've come to the right place. We hope to dispel all your doubts.
+                        If you are wondering how to do it so that your child does not get discouraged, but English becomes entertainment for him - you are come to the right place. We hope to dispel all your doubts.
                         </p>
                     </div>
 
