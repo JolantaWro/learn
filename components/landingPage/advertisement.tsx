@@ -8,7 +8,7 @@ import star from "../../public/star.svg"
 export function Advertisement() {
     return (
         <>
-            <section className='px-4 mt-4'>
+            <section className='px-4 mt-4 md:col-span-2'>
                 <div className='bg-zinc-100 pb-4'>
                     <p className='uppercase text-center font-bold pt-1 text-zinc-600'>Advertisement</p>
                     <div className='flex w-full bg-zinc-400 text-zinc-50'>

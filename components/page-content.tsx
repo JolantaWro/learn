@@ -13,9 +13,11 @@ export function MainContent() {
     return (
         <>
             <div className='container mx-auto'>
-                <AboutPage />
-                <GamesList />
-                <Advertisement />
+                <div className='md:grid md:grid-cols-2'>
+                    <AboutPage />
+                    <GamesList />
+                    <Advertisement />
+                </div>
                 <BlogContent />
             </div>
         </>
