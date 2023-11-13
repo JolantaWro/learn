@@ -10,7 +10,7 @@ export function MainHeader() {
         <>
             <div className='grid grid-cols-3 bg-zinc-200 font-bold'>
                 <Image className="p-1 self-center" alt="" src={bar} />
-                <h1 className="justify-self-center font-serif p-1">.Think</h1>
+                <h1 className="justify-self-center font-serif p-1 text-xl">.Think</h1>
             </div>
         </>
     )
