@@ -7,9 +7,9 @@ import mainView from "../../public/puzzle.jpg"
 export function AboutPage() {
     return (
         <>
-            <section className='px-4 mt-8'>
-                <Image className="" alt="" src={mainView} />
-                <h2 className='font-bold text-xl mt-6'>Are you ready to embark on a journey that combines fun, education, and mental stimulation? Look no further! 
+            <section className='px-4 mt-8 text-justify'>
+                <Image className="md:float-left md:w-[400px] md:h-[200px] md:mr-4" alt="" src={mainView} />
+                <h2 className='font-bold text-xl mt-6 '>Are you ready to embark on a journey that combines fun, education, and mental stimulation? Look no further! 
                 Welcome to our website, a hub for all things brain-boosting and educational.</h2>
                 <p className='text-lg'>We are dedicated to providing you with a wide array of easy, brain-puzzling games and insightful blog posts on various teaching methods, 
                 catering to learners of all ages, from infants to adults.</p> 
