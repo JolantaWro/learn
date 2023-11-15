@@ -15,7 +15,9 @@ export function MainContent() {
             <div className='container mx-auto'>
                 <AboutPage />
                 <GamesList />
-                <Advertisement />
+                <div className='md:grid md:grid-cols-2'> 
+                    <Advertisement />
+                </div>
                 <BlogContent />
             </div>
         </>
