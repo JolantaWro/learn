@@ -7,7 +7,7 @@ import mainView from "../../public/puzzle.jpg"
 export function AboutPage() {
     return (
         <>
-            <section className='px-4 mt-8 text-justify'>
+            <section className='px-4 mt-8 text-justify xl:col-span-5'>
                 <Image className="md:float-left md:w-[400px] md:h-[200px] md:mr-4" alt="" src={mainView} />
                 <h2 className='font-bold text-xl mt-6 '>Are you ready to embark on a journey that combines fun, education, and mental stimulation? Look no further! 
                 Welcome to our website, a hub for all things brain-boosting and educational.</h2>
