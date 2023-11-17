@@ -11,7 +11,7 @@ import story from "../../public/story.jpg"
 export function BlogContent() {
     return (
         <>
-            <section className='px-4 mt-8'>
+            <section className='px-4 mt-8 xl:col-span-12'>
                 <h3 className='font-bold text-lg text-center border shadow-md mb-6'>Blog</h3>
                 <div className='grid grid-cols-2 gap-3 md:grid-cols-3'>
                     <div className='flex flex-col'>

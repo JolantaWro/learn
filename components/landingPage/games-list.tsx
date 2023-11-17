@@ -11,9 +11,9 @@ import story from "../../public/story.jpg"
 export function GamesList() {
     return (
         <>
-            <section className='px-4 mt-8'>
+            <section className='px-4 mt-8 xl:col-span-3'>
                 <h3 className='font-bold text-lg text-center border shadow-md'>Popular Games</h3>
-                <div className='md:grid md:grid-cols-2 '>
+                <div className='md:grid md:grid-cols-2 xl:grid-cols-1'>
                     <div className='border-b-[1px] py-4 border-zinc-400'>
                         <div className='flex h-32'>
                             <Image className="w-1/3 rounded-lg object-cover" alt="abacus" src={counting} />

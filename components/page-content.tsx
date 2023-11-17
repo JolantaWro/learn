@@ -12,11 +12,14 @@ import { AboutPage } from './landingPage/page-about';
 export function MainContent() {
     return (
         <>
-            <div className='container mx-auto xl:grid xl:grid-col-12'>
-                <AboutPage />
-                <GamesList />
-                <div className='md:grid md:grid-cols-2'> 
-                    <Advertisement />
+            <div className='container mx-auto'>
+                <div className='xl:grid xl:grid-rows-2'>
+                    <AboutPage />
+                    <GamesList />
+                    <div className='md:grid md:grid-cols-2 xl:row-span-2 xl:col-span-2  xl:mt-0'> 
+                        <Advertisement />
+                    </div>
+                   
                 </div>
                 <BlogContent />
             </div>
