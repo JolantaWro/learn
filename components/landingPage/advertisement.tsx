@@ -8,11 +8,11 @@ import star from "../../public/star.svg"
 export function Advertisement() {
     return (
         <>
-            <section className='px-4 mt-4 md:col-span-2 '>
-                <div className='bg-zinc-100 pb-4 '>
-                    <p className='uppercase text-center font-bold pt-1 text-zinc-600 md:text-2xl'>Advertisement</p>
+            <section className='px-4 mt-4 md:col-span-2 xl:mt-0'>
+                <div className='bg-zinc-100 pb-4 xl:pt-4'>
+                    <p className='uppercase text-center font-bold pt-1 text-zinc-600 md:text-2xl xl:hidden'>Advertisement</p>
                     <div className='flex w-full bg-zinc-400 text-zinc-50'>
-                        <div className='w-1/2 py-5 pl-5 md:pr-6'>
+                        <div className='w-1/2 py-5 pl-5 md:pr-6 xl:my-auto xl:p-4'>
                             <Image alt="Małe charaktery" src={advertisement}  />
                         </div>
                         <div className='w-1/2 flex flex-col justify-center p-4'>
