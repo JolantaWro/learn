@@ -24,6 +24,9 @@ export function GamesList() {
                         </div>
                     </div>
                     <div className='border-b-[1px] py-4 border-zinc-400'>
+                        {/* <Link>
+
+                        </Link> */}
                         <div className='flex h-32'>
                             <Image className="w-1/3 rounded-lg object-cover" alt="abacus" src={words} />
                             <div className='ml-3'>
