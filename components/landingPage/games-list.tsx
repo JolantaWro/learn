@@ -24,16 +24,16 @@ export function GamesList() {
                         </div>
                     </div>
                     <div className='border-b-[1px] py-4 border-zinc-400'>
-                        {/* <Link>
-
-                        </Link> */}
-                        <div className='flex h-32'>
-                            <Image className="w-1/3 rounded-lg object-cover" alt="abacus" src={words} />
-                            <div className='ml-3'>
-                                <h3 className='font-bold text-lg'>Words</h3>
-                                <p className='text-lg'>Learning words divided into different areas of life</p>
+                        <Link href="/games">
+                            <div className='flex h-32'>
+                                <Image className="w-1/3 rounded-lg object-cover" alt="abacus" src={words} />
+                                <div className='ml-3'>
+                                    <h3 className='font-bold text-lg'>Words</h3>
+                                    <p className='text-lg'>Learning words divided into different areas of life</p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
+                        
                     </div>
                     <div className='border-b-[1px] py-4 border-zinc-400'>
                         <div className='flex h-32'>
