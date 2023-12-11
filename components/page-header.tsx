@@ -19,7 +19,9 @@ export function MainHeader() {
                 <div className='container mx-auto'>
                     <ul className='flex w-full items-center justify-center space-x-8 gap-4 font-bold text-2xl border-y-2'>
                         <li>About</li>
-                        <li>Games</li>
+                        <li>
+                            <Link href="/games">Games</Link>
+                        </li>
                         <li>Storys</li>
                         <li>Blog</li>
                         <li>Inspiration</li>
