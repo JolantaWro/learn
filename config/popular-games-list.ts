@@ -3,7 +3,7 @@ import words from "@/public/words.jpg"
 import blocks from "@/public/blocks.jpg"
 import story from "@/public/story.jpg"
 
-export const ListGamesData = [
+export const PopularListGamesData = [
     {
         imageUrl: counting,
         href: "/not-found",
