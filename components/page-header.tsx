@@ -18,13 +18,15 @@ export function MainHeader() {
                 </div>
                 <div className='container mx-auto'>
                     <ul className='flex w-full items-center justify-center space-x-8 gap-4 font-bold text-2xl border-y-2'>
-                        <li>About</li>
+                        <li>
+                            <Link href="/about">About</Link>
+                        </li>
                         <li>
                             <Link href="/games">Games</Link>
                         </li>
-                        <li>Storys</li>
-                        <li>Blog</li>
-                        <li>Inspiration</li>
+                        <li><Link href="/story">Storys</Link></li>
+                        <li><Link href="/blog">Blog</Link></li>
+                        <li><Link href="/ideas">Inspiration</Link></li>
                         <li>Contact</li>
                     </ul>
                 </div>

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from "next/link";
-import { ListGamesData } from '@/config/games-list';
+import { PopularListGamesData } from '@/config/popular-games-list';
 
 
 export function GamesList() {
@@ -12,7 +12,7 @@ export function GamesList() {
                 <h3 className='font-bold text-lg text-center border shadow-md xl:w-[400px] xl:m-auto'>Popular</h3>
                 <div className='md:grid md:grid-cols-2 xl:grid-cols-1'>
                 {
-                    ListGamesData.map((data, index) => (
+                    PopularListGamesData.map((data, index) => (
                         <GameElement
                             imageUrl={data.imageUrl}
                             href={data.href}
