@@ -13,10 +13,9 @@ export default function StoryHome() {
           <p>................</p>
           <p>Something about storys in portal</p>
           <p>................</p>
-          <p>Link to games:</p>
-          <Link href="/games/words">Words games</Link>
-          <Link href="/not-found">Counting games</Link>
-          <Link href="/not-found">Puzzles</Link>
+          <p>Link to first story</p>
+          <Link href="/story/baby">Little Tommy</Link>
+
 
       </div>
         
