@@ -15,6 +15,8 @@ export default function StoryHome() {
           <p>................</p>
           <p>Link to first story</p>
           <Link href="/story/baby">Little Tommy</Link>
+          <p>...............</p>
+          <Link href="/story/middle">Little Rabit</Link>
 
 
       </div>
