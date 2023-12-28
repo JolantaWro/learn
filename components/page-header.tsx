@@ -14,7 +14,7 @@ export function MainHeader() {
             </div>
             <div className='hidden xl:flex flex-col'>
                 <div className='container mx-auto'>
-                    <h1 className="justify-self-center font-serif text-4xl font-bold p-6">.Think</h1>
+                    <h1 className="justify-self-center font-serif text-5xl font-bold p-6">.Think</h1>
                 </div>
                 <div className='container mx-auto'>
                     <ul className='flex w-full items-center justify-center space-x-8 gap-4 font-bold text-2xl border-y-2'>
