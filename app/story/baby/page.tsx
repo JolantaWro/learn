@@ -37,7 +37,7 @@ export default function BabyMain() {
   }
   
 
-  type ListGamesProps = {
+type ListGamesProps = {
     imageUrl: any,
     href: string,
     title: string,
