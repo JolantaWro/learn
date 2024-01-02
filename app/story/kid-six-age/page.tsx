@@ -1,11 +1,11 @@
 import { WordsGame } from "@/components/games/words";
-import { FirstStory } from "@/components/story/first-story";
-import { BabyStoryData } from '@/config/baby-list';
+import { Story2 } from "@/components/story/story-2";
+import { PopularListGamesData } from '@/config/popular-games-list';
 import Image from 'next/image';
 import Link from "next/link";
 
 
-export default function BabyMain() {
+export default function KidsSixAgeMain() {
     return (
       <main className="container mx-auto">
         <div className="px-30 py-10 flex flex-col items-center gap-10">
@@ -14,13 +14,13 @@ export default function BabyMain() {
           <div className='px-4 mt-8'>
                 <div className='md:grid md:grid-cols-2 xl:grid-cols-1'>
                 {
-                    BabyStoryData.map((data, index) => (
+                    PopularListGamesData.map((data, index) => (
                         <GameElement
                             imageUrl={data.imageUrl}
                             href={data.href}
                             title={data.title}
                             description={data.description}
-                            key={`story-${index}`}
+                            key={`game-${index}`}
                         />
                     ))
                 }
@@ -30,12 +30,14 @@ export default function BabyMain() {
 
         </div>
          
-        
-          {/* <FirstStory /> */}
+
       </main>
     )
   }
   
+
+
+  // <Story2 />
 
 type ListGamesProps = {
     imageUrl: any,
@@ -49,7 +51,7 @@ const GameElement = ({ imageUrl, href, title, description }: ListGamesProps) => 
         <div className='border-b-[1px] py-4 border-zinc-400'>
             <Link href={href}>
                 <div className='flex h-32'>
-                    <Image className="w-[250px] rounded-lg object-cover" alt="abacus" src={imageUrl} />
+                    <Image className="w-1/3 rounded-lg object-cover" alt="abacus" src={imageUrl} />
                     <div className='ml-3'>
                         <h3 className='font-bold text-lg'>{title}</h3>
                         <p className='text-lg'>{description}</p>

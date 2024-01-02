@@ -18,10 +18,10 @@ export default function StoryHome() {
             <Link href="/story/middle" className="py-4 px-10 bg-black rounded shadow-md">
               <span className="text-white text-base font-inter not-italic font-bold leading-[150%]"> &#43; 3</span>
             </Link>
-            <Link href="" className="py-4 px-10 bg-black rounded shadow-md">
+            <Link href="/story/kid-six-age" className="py-4 px-10 bg-black rounded shadow-md">
               <span className="text-white text-base font-inter not-italic font-bold leading-[150%]"> &#43; 6</span>
             </Link>
-            <Link href="" className="py-4 px-10 bg-black rounded shadow-md">
+            <Link href="/story/kid-nine-age" className="py-4 px-10 bg-black rounded shadow-md">
               <span className="text-white text-base font-inter not-italic font-bold leading-[150%]"> &#43; 9</span>
             </Link>
           </div>
