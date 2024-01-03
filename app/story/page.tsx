@@ -25,15 +25,6 @@ export default function StoryHome() {
               <span className="text-white text-base font-inter not-italic font-bold leading-[150%]"> &#43; 9</span>
             </Link>
           </div>
-
-
-
-
-          {/* <Link href="/story/baby">Little Tommy</Link>
-          <p>...............</p>
-          <Link href="/story/middle">Little Rabit</Link> */}
-
-
       </div>
         
     </main>
