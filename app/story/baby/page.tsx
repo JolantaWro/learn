@@ -41,7 +41,7 @@ const Story1Element = ({ imageUrl, href, title }: StoryProps) => {
         <div className='grid grid-cols-4 pt-10'>
             <Link href={href} className="col-span-4">
                 <div className='flex flex-col gap-4'>
-                    <Image className="h-32 rounded-lg object-cover" alt="abacus" src={imageUrl} />
+                    <Image className="h-52 rounded-lg object-cover" alt="abacus" src={imageUrl} />
                     <h3 className='font-bold text-lg text-center'>{title}</h3>
                 </div>
             </Link>
