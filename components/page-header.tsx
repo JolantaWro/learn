@@ -24,7 +24,7 @@ export function MainHeader() {
                         <li>
                             <Link href="/games">Games</Link>
                         </li>
-                        <li><Link href="/story">Storys</Link></li>
+                        <li><Link href="/story">Story</Link></li>
                         <li><Link href="/blog">Blog</Link></li>
                         <li><Link href="/ideas">Inspiration</Link></li>
                         <li>Contact</li>
