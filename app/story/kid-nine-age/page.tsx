@@ -1,5 +1,5 @@
 import { WordsGame } from "@/components/games/words";
-import { Story2 } from "@/components/story/story-2";
+import { StoryNr2 } from "@/components/story/story-2";
 import { PopularListGamesData } from '@/config/popular-games-list';
 import Image from 'next/image';
 import Link from "next/link";
