@@ -1,5 +1,3 @@
-import { WordsGame } from "@/components/games/words";
-import { FirstStory } from "@/components/story/first-story";
 import { BabyStoryData } from '@/config/baby-list';
 import Image from 'next/image';
 import Link from "next/link";
@@ -37,7 +35,6 @@ type StoryProps = {
 
 const Story1Element = ({ imageUrl, href, title }: StoryProps) => {
     return (
-        // <div className='border-b-[1px] py-4 border-zinc-400'>
         <div className='grid grid-cols-4 pt-10'>
             <Link href={href} className="col-span-4">
                 <div className='flex flex-col gap-4'>
