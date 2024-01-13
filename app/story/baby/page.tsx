@@ -1,3 +1,4 @@
+import Container from '@/components/ui/container';
 import { BabyStoryData } from '@/config/baby-list';
 import Image from 'next/image';
 import Link from "next/link";
@@ -5,24 +6,44 @@ import Link from "next/link";
 
 export default function BabyMain() {
     return (
-      <main className="container mx-auto">
-        <div className="px-30 py-10 flex flex-col items-center gap-10">
-            <h1 className="text-3xl text-center font-bold">List of stories for children</h1>
+        <>
+            <Container>
+                <div className="px-30 py-10 flex flex-col items-center gap-10 col-span-12 sm:col-span-8">
+                    <h1 className="text-3xl text-center font-bold">List of stories for children</h1>
 
-            <div className='px-4 mt-8'>
-                {
-                    BabyStoryData.map((data, index) => (
-                        <Story1Element
-                            imageUrl={data.imageUrl}
-                            href={data.href}
-                            title={data.title}
-                            key={`story-${index}`}
-                        />
-                    ))
-                }
-            </div>
-        </div>
-      </main>
+                    <div className='px-4 mt-8'>
+                        {
+                            BabyStoryData.map((data, index) => (
+                                <Story1Element
+                                    imageUrl={data.imageUrl}
+                                    href={data.href}
+                                    title={data.title}
+                                    key={`story-${index}`}
+                                />
+                            ))
+                        }
+                    </div>
+                </div>
+            </Container>
+        </>
+    //   <main className="container mx-auto">
+    //     <div className="px-30 py-10 flex flex-col items-center gap-10">
+    //         <h1 className="text-3xl text-center font-bold">List of stories for children</h1>
+
+    //         <div className='px-4 mt-8'>
+    //             {
+    //                 BabyStoryData.map((data, index) => (
+    //                     <Story1Element
+    //                         imageUrl={data.imageUrl}
+    //                         href={data.href}
+    //                         title={data.title}
+    //                         key={`story-${index}`}
+    //                     />
+    //                 ))
+    //             }
+    //         </div>
+    //     </div>
+    //   </main>
     )
   }
   
