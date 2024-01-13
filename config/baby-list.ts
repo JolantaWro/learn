@@ -3,6 +3,7 @@ import words from "@/public/words.jpg"
 import blocks from "@/public/blocks.jpg"
 import story1 from "@/public/story2.jpg"
 import story2 from "@/public/girlAndBear.jpg"
+import story3 from "@/public/ducks.jpg"
 import story from "@/public/story.jpg"
 
 export const BabyStoryData = [
@@ -17,9 +18,9 @@ export const BabyStoryData = [
         title: "Ruby",
     },
     {
-        imageUrl: story,
-        href: "/not-found",
-        title: "Puzzles",
+        imageUrl: story3,
+        href: "/story/baby/story-3",
+        title: "Duckling",
     },
     {
         imageUrl: story,

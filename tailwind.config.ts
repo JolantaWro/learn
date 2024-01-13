@@ -8,6 +8,7 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    
     extend: {
       fontFamily: {
         'serif': ['ui-serif', 'Georgia', ...defaultTheme.fontFamily.sans],
