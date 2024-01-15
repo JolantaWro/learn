@@ -10,15 +10,16 @@ export function StoryN4() {
         <>
             <section className='container mx-auto'>
                 <div className="px-30 py-10 flex flex-col items-center gap-10">
-                    <h1 className="text-3xl text-center font-bold">The Brave Little Steps: Philip's Potty Adventure</h1>
+                    <h1 className="text-3xl text-center font-bold">The Brave Little Steps: Philip&apos;s Potty Adventure</h1>
 
                     <div className='px-4 mt-4'>
                         <Image src={story4} alt='' className='rounded-lg object-cover"'/>
-                        <p className='text-lg pt-6'>Once upon a sunny day in a small village, there lived a duckling named Katie. Katie was very curious about the world and loved running around the meadow with her siblings. 
-                        However, one day, while they were all swimming in the pond, Katie saw something interesting at the other end of the water.Without thinking twice, Katie swam towards that intriguing place, fascinated by the mysterious surroundings. 
-                        As she ventured further, she began to feel a little scared. Everything around her was unfamiliar, and her family disappeared from her sight. Katie started quacking loudly, but her siblings were too far away to hear her.Katie began to worry, but then suddenly, her sister, Cornelia, appeared. 
-                        Cornelia noticed that Katie had drifted away from the family and immediately ran to find her. When they met, Cornelia hugged Katie, and together, they happily returned to their family.The duck family was overjoyed when Katie and Cornelia rejoined them. They all immersed themselves in joyful swimming, with the sun shining on their colorful feathers. 
-                        Katie realized that while it might be interesting to explore new things at times, it is always best to be with loved ones who take care of her.</p>
+                        <p>Once upon a time, in a little town, there lived a small boy named Philip. Philip was already a big boy, but he was still learning certain things. His parents always told him that one of the most important skills he needed to master was using the potty. 
+                            One day, Philip decided to try peeing not in a diaper but in a little potty. He was a bit nervous because it was a new skill for him. He went to the bathroom, sat on his small potty, and began to learn.
+                            It took him a little while, but his parents were very proud of him. His mom brought him a little book to read to help him relax, and his dad stood beside him, encouraging him to be brave.
+                            After some time, Philip did it! He successfully used the potty like a real big boy. His parents were overjoyed with pride, celebrating this small but significant step in Philip&apos;s growing up.
+                            From that day on, Philip was even prouder of his new skill. Everyone celebrated the success together, and Philip knew that learning new things could be challenging, but it was always worth trying.
+                        </p>
                     </div>
                 </div>
             </section>
