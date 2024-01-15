@@ -4,6 +4,7 @@ import blocks from "@/public/blocks.jpg"
 import story1 from "@/public/story2.jpg"
 import story2 from "@/public/girlAndBear.jpg"
 import story3 from "@/public/ducks.jpg"
+import story4 from "@/public/story4.jpg"
 import story from "@/public/story.jpg"
 
 export const BabyStoryData = [
@@ -23,8 +24,8 @@ export const BabyStoryData = [
         title: "Duckling",
     },
     {
-        imageUrl: story,
-        href: "/not-found",
-        title: "Story",
+        imageUrl: story4,
+        href: "/story/baby/story-4",
+        title: "The Brave Little Steps: Philip's Potty Adventure",
     },
 ]
