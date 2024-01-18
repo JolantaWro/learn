@@ -13,20 +13,19 @@ export default function StoryHome() {
           <h3 className="text-2xl text-gray-600 font-bold">Select age</h3>
           <div className="flex flex-row gap-6">
             <Link href="/story/baby" className="py-4 px-10 bg-black rounded shadow-md">
-              <span className="text-white text-base font-inter not-italic font-bold leading-[150%]"> &#62; 3</span>
+              <span className="text-white text-base font-inter not-italic font-bold leading-[150%]"> &lt; 3</span>
             </Link>
-            <Link href="/story/middle" className="py-4 px-10 bg-black rounded shadow-md">
+            <Link href="/not-found" className="py-4 px-10 bg-black rounded shadow-md">
               <span className="text-white text-base font-inter not-italic font-bold leading-[150%]"> &#43; 3</span>
             </Link>
-            <Link href="/story/kid-six-age" className="py-4 px-10 bg-black rounded shadow-md">
+            <Link href="/not-found" className="py-4 px-10 bg-black rounded shadow-md">
               <span className="text-white text-base font-inter not-italic font-bold leading-[150%]"> &#43; 6</span>
             </Link>
-            <Link href="/story/kid-nine-age" className="py-4 px-10 bg-black rounded shadow-md">
+            <Link href="/not-found" className="py-4 px-10 bg-black rounded shadow-md">
               <span className="text-white text-base font-inter not-italic font-bold leading-[150%]"> &#43; 9</span>
             </Link>
           </div>
       </div>
-        
     </main>
   )
 }
