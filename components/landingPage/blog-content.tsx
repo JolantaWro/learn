@@ -1,77 +1,140 @@
 'use client'
 
 import Image from 'next/image';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import Link from "next/link";
-import reading from "../../public/globalLerning.jpg"
-import english from "../../public/englishLerning.jpg"
-import blocks from "../../public/blocks.jpg"
-import story from "../../public/story.jpg"
+import { BlogData } from '@/config/blog';
+import arrowNext from "@/public/Arrow Next.svg";
+import arrowPrew from "@/public/Arrow Prew.svg";
+
+
+interface ArrowProps {
+    onClick?: React.MouseEventHandler<HTMLDivElement>;
+  }
+
+  function SampleNextArrow({ onClick }: ArrowProps) {
+    return (
+        <div className='absolute right-0 z-1' onClick={onClick}>
+            <Image className="w-[21.552px] stroke-2 " alt="arrow" src={arrowNext} />
+        </div>
+    );
+  }
+
+  function SamplePrevArrow({ onClick }: ArrowProps) {
+    return (
+      <div className='absolute left-0 z-1 bottom-[-20px]' onClick={onClick}>
+        <Image className="w-[21.552px] stroke-2" alt="arrow" src={arrowPrew} />
+      </div>
+    );
+  }
+
+
+
 
 
 export function BlogContent() {
+
+    const settings = {
+        className: "center",
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        initialSlide: 0,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 3840,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 1925,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
+
+
     return (
         <>
-            <section className='px-4 mt-8 xl:col-span-12'>
-                <h3 className='font-bold text-lg text-center border shadow-md mb-6 xl:w-[400px] xl:mb-6'>Blog</h3>
-                <div className='grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6'>
-                    <div className='flex flex-col'>
-                        <div className='h-[132px] w-full rounded-lg flex items-center justify-center border border-zinc-100'>
-                            <Image className="md:h-[132px]" alt="" src={reading} />
-                        </div>
-                        <h3 className='font-bold mt-2 text-base'>Learning to read by learning global reading</h3>
-                        <p className='line-clamp-4 mt-2 text-base'>Want to learn more about global reading? Learn the definition, theoretical foundations, scientific research, effectiveness and some other interesting facts.
-                        Global reading, the Doman method and learning to read using the Miracle Child method are sometimes confused - due to the similarity of the cards for learning to read. Meanwhile,
-                        we are dealing with two concepts of child development: the Miracle Child method and the Glen Doman method.
-                        </p>
+            <div className='pb-10'  >
+                <Slider {...settings}>
+                    {BlogData.map((data, index) => (
+                        <CarouselElement 
+                        image={data.image} 
+                        description={data.description} 
+                        key={`blog-el-${index}`} 
+                        title={data.title} 
+                        href={data.href}
+                        />
+                        ))}
+                </Slider>
+            </div>
+        </>
+    )
+}
+
+type CarouselElementProps = {
+    image: any,
+    description: string,
+    title: any,
+    href: string,
+
+}
+
+const CarouselElement = ({ image, description, title, href}: CarouselElementProps) => {
+    return (
+        <>    
+            <Link href={href}>
+                <div className='flex flex-col pb-10 px-2'>
+                    <div className='h-[132px] w-full rounded-lg flex items-center justify-center border border-zinc-100'>
+                        <Image className="md:h-[132px]" alt="" src={image} />
                     </div>
-                    <div className='flex flex-col'>
-                        <div className='h-[132px] w-full rounded-lg flex items-center justify-center border border-zinc-100 md:h-[132px]'>
-                            <Image className="md:h-[132px]" alt="" src={english} />
-                        </div>
-                        <h3 className='font-bold mt-2 text-base'>How to teach children English from an early age?</h3>
-                        <p className='line-clamp-4 mt-2 text-base'>Do you want your child to have a better start in life and catch the bug to learn English from preschool age? 
-                        If you are wondering how to do it so that your child does not get discouraged, but English becomes entertainment for him - you are come to the right place. We hope to dispel all your doubts.
-                        </p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <div className='h-[132px] w-full rounded-lg flex items-center justify-center border border-zinc-100 md:h-[132px]'>
-                            <Image className="md:h-[132px]" alt="" src={english} />
-                        </div>
-                        <h3 className='font-bold mt-2 text-base'>How to teach children English from an early age?</h3>
-                        <p className='line-clamp-4 mt-2 text-base'>Do you want your child to have a better start in life and catch the bug to learn English from preschool age? 
-                        If you are wondering how to do it so that your child does not get discouraged, but English becomes entertainment for him - you are come to the right place. We hope to dispel all your doubts.
-                        </p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <div className='h-[132px] w-full rounded-lg flex items-center justify-center border border-zinc-100 md:h-[132px]'>
-                            <Image className="md:h-[132px]" alt="" src={reading} />
-                        </div>
-                        <h3 className='font-bold mt-2 text-base'>Learning to read by learning global reading</h3>
-                        <p className='line-clamp-4 mt-2 text-base'>Want to learn more about global reading? Learn the definition, theoretical foundations, scientific research, effectiveness and some other interesting facts.
-                        Global reading, the Doman method and learning to read using the Miracle Child method are sometimes confused - due to the similarity of the cards for learning to read. Meanwhile,
-                        we are dealing with two concepts of child development: the Miracle Child method and the Glen Doman method.
-                        </p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <div className='h-[132px] w-full rounded-lg flex items-center justify-center border border-zinc-100 md:h-[132px]'>
-                            <Image className="md:h-[132px]" alt="" src={english} />
-                        </div>
-                        <h3 className='font-bold mt-2 text-base'>How to teach children English from an early age?</h3>
-                        <p className='line-clamp-4 mt-2 text-base'>Do you want your child to have a better start in life and catch the bug to learn English from preschool age? 
-                        If you are wondering how to do it so that your child does not get discouraged, but English becomes entertainment for him - you are come to the right place. We hope to dispel all your doubts.
-                        </p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <div className='h-[132px] w-full rounded-lg flex items-center justify-center border border-zinc-100 md:h-[132px]'>
-                            <Image className="md:h-[132px]" alt="" src={english} />
-                        </div>
-                        <h3 className='font-bold mt-2 text-base'>How to teach children English from an early age?</h3>
-                        <p className='line-clamp-4 mt-2 text-base'>Do you want your child to have a better start in life and catch the bug to learn English from preschool age? 
-                        If you are wondering how to do it so that your child does not get discouraged, but English becomes entertainment for him - you are come to the right place. We hope to dispel all your doubts.
-                        </p>
-                    </div>
+                    <h3 className='font-bold mt-2 text-base'>{title}</h3>
+                    <p className='line-clamp-4 mt-2 text-base'>{description}</p>
                 </div>
-            </section>
+            </Link>  
+             
         </>
     )
 }
