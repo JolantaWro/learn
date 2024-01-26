@@ -1,9 +1,8 @@
 'use client'
 
 import Image from 'next/image';
-import Link from "next/link";
-import advertisement from "../../public/advertisement.png"
-import star from "../../public/star.svg"
+import advertisement from "@/public/advertisement.png"
+import star from "@/public/star.svg"
 
 export function Advertisement() {
     return (

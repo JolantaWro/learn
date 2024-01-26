@@ -27,10 +27,10 @@ export function MainHeader() {
             {!isSmallScreen && (
                 <div className='hidden xl:flex flex-col'>
                     <div className='container mx-auto'>
-                        <h1 className="justify-self-center font-serif text-5xl font-bold p-6">.Think</h1>
+                        <h1 className="justify-self-center font-serif text-5xl font-bold p-6 ">.Think</h1>
                     </div>
                     <div className='container mx-auto'>
-                        <ul className='flex w-full items-center justify-center space-x-8 gap-4 font-bold text-2xl border-y-2'>
+                        <ul className='flex w-full items-center justify-center space-x-14 gap-4 font-bold text-3xl border-y-2'>
                             <li>
                                 <Link href="/about">About</Link>
                             </li>
@@ -40,7 +40,6 @@ export function MainHeader() {
                             <li><Link href="/story">Story</Link></li>
                             <li><Link href="/blog">Blog</Link></li>
                             <li><Link href="/ideas">Inspiration</Link></li>
-                            <li>Contact</li>
                         </ul>
                     </div>
                 </div>
@@ -50,22 +49,21 @@ export function MainHeader() {
         
                     <div className="container mx-auto">
                         <ul className="flex flex-col items-center justify-center space-y-4 font-bold text-2xl border-y-2">
-                        <li>
-                            <Link href="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link href="/games">Games</Link>
-                        </li>
-                        <li>
-                            <Link href="/story">Story</Link>
-                        </li>
-                        <li>
-                            <Link href="/blog">Blog</Link>
-                        </li>
-                        <li>
-                            <Link href="/ideas">Inspiration</Link>
-                        </li>
-                        <li>Contact</li>
+                            <li>
+                                <Link href="/about">About</Link>
+                            </li>
+                            <li>
+                                <Link href="/games">Games</Link>
+                            </li>
+                            <li>
+                                <Link href="/story">Story</Link>
+                            </li>
+                            <li>
+                                <Link href="/blog">Blog</Link>
+                            </li>
+                            <li>
+                                <Link href="/ideas">Inspiration</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
