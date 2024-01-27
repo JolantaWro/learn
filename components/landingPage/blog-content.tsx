@@ -24,7 +24,7 @@ interface ArrowProps {
 
   function SamplePrevArrow({ onClick }: ArrowProps) {
     return (
-      <div className='absolute left-0 z-1 bottom-[-20px]' onClick={onClick}>
+      <div className='absolute left-0 z-1 bottom-[20px]' onClick={onClick}>
         <Image className="w-[21.552px] stroke-2" alt="arrow" src={arrowPrew} />
       </div>
     );
@@ -37,11 +37,13 @@ interface ArrowProps {
 export function BlogContent() {
 
     const settings = {
-        className: "center",
+        className: "center pb-10",
         dots: false,
         arrows: true,
         infinite: true,
         speed: 500,
+        // cssEase: "linear",
+        // autoplaySpeed: 2000,
         slidesToShow: 5,
         slidesToScroll: 5,
         initialSlide: 0,
@@ -97,7 +99,7 @@ export function BlogContent() {
 
     return (
         <>
-            <div className='pb-10'  >
+            <div className='py-10'  >
                 <Slider {...settings}>
                     {BlogData.map((data, index) => (
                         <CarouselElement 
