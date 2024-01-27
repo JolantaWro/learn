@@ -32,14 +32,14 @@ export function MainHeader() {
                     <div className='container mx-auto'>
                         <ul className='flex w-full items-center justify-center space-x-14 gap-4 font-bold text-3xl border-y-2'>
                             <li>
-                                <Link href="/about">About</Link>
+                                <Link href="/about" className='hover:text-orange-600'>About</Link>
                             </li>
                             <li>
-                                <Link href="/games">Games</Link>
+                                <Link href="/games" className='hover:text-orange-600'>Games</Link>
                             </li>
-                            <li><Link href="/story">Story</Link></li>
-                            <li><Link href="/blog">Blog</Link></li>
-                            <li><Link href="/ideas">Inspiration</Link></li>
+                            <li><Link href="/story" className='hover:text-orange-600'>Story</Link></li>
+                            <li><Link href="/blog" className='hover:text-orange-600'>Blog</Link></li>
+                            <li><Link href="/ideas" className='hover:text-orange-600'>Inspiration</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -50,16 +50,16 @@ export function MainHeader() {
                     <div className="container mx-auto">
                         <ul className="flex flex-col items-center justify-center space-y-4 font-bold text-2xl border-y-2">
                             <li>
-                                <Link href="/about">About</Link>
+                                <Link href="/about" className='hover:text-orange-600'>About</Link>
                             </li>
                             <li>
-                                <Link href="/games">Games</Link>
+                                <Link href="/games" className='hover:text-orange-600'>Games</Link>
                             </li>
                             <li>
-                                <Link href="/story">Story</Link>
+                                <Link href="/story" className='hover:text-orange-600'>Story</Link>
                             </li>
                             <li>
-                                <Link href="/blog">Blog</Link>
+                                <Link href="/blog" className='hover:text-orange-600'>Blog</Link>
                             </li>
                             <li>
                                 <Link href="/ideas">Inspiration</Link>
