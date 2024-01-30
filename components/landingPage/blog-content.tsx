@@ -128,7 +128,7 @@ const CarouselElement = ({ image, description, title, href}: CarouselElementProp
     return (
         <>    
             <Link href={href}>
-                <div className='flex flex-col pb-10 px-2'>
+                <div className='flex flex-col pb-10 px-2 hover:bg-gray-100'>
                     <div className='h-[132px] w-full rounded-lg flex items-center justify-center border border-zinc-100'>
                         <Image className="md:h-[132px]" alt="" src={image} />
                     </div>
