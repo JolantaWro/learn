@@ -129,11 +129,11 @@ const CarouselElement = ({ image, description, title, href}: CarouselElementProp
         <>    
             <Link href={href}>
                 <div className='flex flex-col pb-10 px-2 hover:bg-gray-100'>
-                    <div className='h-[132px] w-full rounded-lg flex items-center justify-center border border-zinc-100'>
-                        <Image className="md:h-[132px]" alt="" src={image} />
+                    <div className='w-full rounded-lg flex items-center justify-center border border-zinc-100'>
+                        <Image className="" alt="" src={image} />
                     </div>
-                    <h3 className='font-bold mt-2 text-base'>{title}</h3>
-                    <p className='line-clamp-4 mt-2 text-base'>{description}</p>
+                    <h3 className='font-bold mt-2 text-lg'>{title}</h3>
+                    <p className='line-clamp-4 mt-2 text-lg'>{description}</p>
                 </div>
             </Link>  
              
