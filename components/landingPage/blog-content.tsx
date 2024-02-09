@@ -45,7 +45,7 @@ export function BlogContent() {
         // cssEase: "linear",
         // autoplaySpeed: 2000,
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 1,
         initialSlide: 0,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
@@ -54,35 +54,28 @@ export function BlogContent() {
                 breakpoint: 3840,
                 settings: {
                     slidesToShow: 5,
-                    slidesToScroll: 5,
-                    infinite: true,
-                    dots: false
+                    slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 1925,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true,
-                    dots: false
+                    slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 1440,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: false
+                    slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
+                    slidesToScroll: 1
                 }
             },
             {
