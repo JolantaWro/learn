@@ -38,7 +38,7 @@ const BlogElement = ({ image, description, title, href}: BlogElementProps) => {
   return (
       <>    
           <Link href={href}>
-              <div className='flex flex-col pb-10 px-2 hover:bg-gray-100'>
+              <div className='flex flex-col pb-10 px-2 hover:bg-gray-200'>
                   <div className='w-full rounded-lg flex items-center justify-center border border-zinc-100'>
                       <Image className="" alt="" src={image} />
                   </div>
