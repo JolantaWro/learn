@@ -24,7 +24,7 @@ export const PopularListGamesData = [
     },
     {
         imageUrl: story,
-        href: "/not-found",
+        href: "/story",
         title: "Story",
         description: "Stories for everyone to read",
     },
