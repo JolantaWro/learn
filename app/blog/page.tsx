@@ -6,7 +6,6 @@ export default function Blog() {
   return (
     <main className="container mx-auto">
       <div className="px-30 py-10 flex flex-col items-center gap-10">
-        <h1 className="text-5xl font-black border shadow-md w-[400px] m-auto text-center py-2">Blog</h1>
         <div className='grid xl:grid-cols-3 md:grid-cols-2'>
           {
           BlogData.map((data, index) => (
