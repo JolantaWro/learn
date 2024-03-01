@@ -32,7 +32,7 @@ export function MainHeader() {
                     <div className='container mx-auto'>
                         <ul className='flex w-full items-center justify-center space-x-14 gap-4 font-bold text-3xl border-y-2'>
                             <li>
-                                <Link href="/about" className='hover:text-orange-600'>About</Link>
+                                <Link href="/" className='hover:text-orange-600'>About</Link>
                             </li>
                             <li>
                                 <Link href="/games" className='hover:text-orange-600'>Games</Link>
