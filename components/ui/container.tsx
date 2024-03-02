@@ -6,7 +6,7 @@ interface ContainerProps {
     className?: string;
 }
 
-const Container: FC<ContainerProps> = ({ children, className }) => {
+export const Container: FC<ContainerProps> = ({ children, className }) => {
     return (
         <div className={cn(`grid
             grid-cols-12 sm:grid-cols-4
@@ -19,4 +19,13 @@ const Container: FC<ContainerProps> = ({ children, className }) => {
     )
 }
 
-export default Container;
+export const MainContainer: FC<ContainerProps> = ({ children, className }) => {
+    return (
+        <div className={cn(`grid
+            grid-cols-12 xs:grid-cols-4 sm:grid-cols-8
+            mx-0 lg:gap-x-[24px] xl:gap-x-[24px] 2xl:gap-[24px] 3xl:gap-x-[24px] 4xl:gap-x-[24px]`, 
+            className)}>
+            {children}
+        </div>
+    )
+}
