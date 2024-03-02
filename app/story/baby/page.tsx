@@ -1,4 +1,4 @@
-import Container from '@/components/ui/container';
+import {Container} from '@/components/ui/container';
 import { BabyStoryData } from '@/config/baby-list';
 import Image from 'next/image';
 import Link from "next/link";
