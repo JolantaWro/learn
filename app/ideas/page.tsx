@@ -1,5 +1,6 @@
 import { MainContainer } from "@/components/ui/container";
 import Link from "next/link";
+import { BabyStoryData } from '@/config/baby-list';
 
 
 export default function IdeasHome() {
@@ -18,7 +19,14 @@ export default function IdeasHome() {
           </div>
         </div>
       </MainContainer>
-
+      {
+          BabyStoryData.map((data, index) => (
+              <div key={`story-${index}`}>
+                <Link href={data.href}>{data.title}
+                </Link>      
+                </div>
+          ))
+      }
         
   </>
   )
