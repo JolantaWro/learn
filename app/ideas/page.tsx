@@ -10,14 +10,14 @@ export default function IdeasHome() {
       <div className="grid grid-cols-12">
         <MainContainer className="pt-10 col-span-2">
           <div className="col-span-4 sm:col-span-8">
-            <div className="flex flex-col">
-              <h1 className="p-2 text-xl sm:invisible">Category:</h1>
-              <p className="px-4 text-lg">Home</p>
-              <p className="px-4">Kids</p>
-              <p className="px-4">Technology</p>
-              <p className="px-4">Garden</p>
-              <p className="px-4">Gift</p>
-              <p className="px-4">Food</p>
+            <div className="flex flex-col ml-20 gap-8">
+              <h1 className="p-2 text-4xl sm:invisible font-semibold">Category:</h1>
+              <p className="px-4 text-2xl font-semibold hover:text-[rgba(218,164,139,1)] hover:underline hover:underline-offset-8">Home</p>
+              <p className="px-4 text-2xl font-semibold hover:text-[rgba(218,164,139,1)] hover:underline hover:underline-offset-8">Kids</p>
+              <p className="px-4 text-2xl font-semibold hover:text-[rgba(218,164,139,1)] hover:underline hover:underline-offset-8">Technology</p>
+              <p className="px-4 text-2xl font-semibold hover:text-[rgba(218,164,139,1)] hover:underline hover:underline-offset-8">Garden</p>
+              <p className="px-4 text-2xl font-semibold hover:text-[rgba(218,164,139,1)] hover:underline hover:underline-offset-8">Gift</p>
+              <p className="px-4 text-2xl font-semibold hover:text-[rgba(218,164,139,1)] hover:underline hover:underline-offset-8">Food</p>
             </div>
           </div>
         </MainContainer>
