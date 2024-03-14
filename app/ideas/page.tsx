@@ -21,7 +21,37 @@ export default function IdeasHome() {
             </div>
           </div>
         </MainContainer>
-        <Container className="pt-8">
+        <Container className="pt-8 items-center justify-center">
+          {
+              BabyStoryData.map((data, index) => (
+                  <div className="span-col-6" key={`story-${index}`}>
+                    <Link href={data.href}>
+                      <Image src={data.imageUrl} alt="" className="w-[400px] h-[200px]"></Image>
+                      <h1 className="text-center">{data.title}</h1>
+                    </Link>      
+                    </div>
+              ))
+          }
+          {
+              BabyStoryData.map((data, index) => (
+                  <div className="span-col-6" key={`story-${index}`}>
+                    <Link href={data.href}>
+                      <Image src={data.imageUrl} alt="" className="w-[400px] h-[200px]"></Image>
+                      <h1 className="text-center">{data.title}</h1>
+                    </Link>      
+                    </div>
+              ))
+          }
+          {
+              BabyStoryData.map((data, index) => (
+                  <div className="span-col-6" key={`story-${index}`}>
+                    <Link href={data.href}>
+                      <Image src={data.imageUrl} alt="" className="w-[400px] h-[200px]"></Image>
+                      <h1 className="text-center">{data.title}</h1>
+                    </Link>      
+                    </div>
+              ))
+          }
           {
               BabyStoryData.map((data, index) => (
                   <div className="span-col-6" key={`story-${index}`}>
@@ -34,9 +64,6 @@ export default function IdeasHome() {
           }
 
         </Container>
-
-
-
       </div>
       
       
