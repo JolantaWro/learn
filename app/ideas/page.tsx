@@ -13,7 +13,7 @@ export default function IdeasHome() {
             <div className="flex flex-col ml-20 gap-8">
               <h1 className="p-2 text-4xl sm:invisible font-semibold">Category:</h1>
               { CategoryList.map((data, index) => (
-                <p className="px-4 text-2xl font-semibold hover:text-[rgba(218,164,139,1)] hover:underline hover:underline-offset-8">{data.title}</p>
+                <p key={data.id} className="px-4 text-2xl font-semibold hover:text-[rgba(218,164,139,1)] hover:underline hover:underline-offset-8">{data.title}</p>
               ))}
              
             </div>
