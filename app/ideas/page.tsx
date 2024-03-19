@@ -10,34 +10,23 @@ import { Input } from "@/components/ui/input"
 export default function IdeasHome() {
   return (
     <>
-      <div className="grid grid-cols-4 md:grid-cols-8 xl:grid-cols-12">
-        {/* <div className="pt-10 col-span-1"> */}
-          
-            {/* <div className="flex flex-col ml-20 gap-8">
-              <h1 className="p-2 text-4xl sm:invisible font-semibold">Category:</h1>
-              { CategoryList.map((data, index) => (
-                <p key={data.id} className="px-4 text-2xl font-semibold hover:text-[rgba(218,164,139,1)] hover:underline hover:underline-offset-8">{data.title}</p>
-              ))}
-             
-            </div> */}
-        {/* </div> */}
-        <div className="flex w-full max-w-sm items-center space-x-2">
-          <Input type="email" placeholder="Email" />
-          <Button type="submit">Search</Button>
-        </div>
-        <div className="pt-8 col-end-5 col-span-2 ">
-          {
-              IdeaData.map((data, index) => (
-                  <IdeaElement
-                      imageUrl={data.imageUrl}
-                      href={data.href}
-                      title={data.title}
-                      key={`idea-${index}`}
-                  />
-              ))
-              }
-        </div>
-      </div>    
+     <div className="flex w-full max-w-2xl items-center space-x-2 pt-10 mx-auto">
+          <Input type="text" placeholder="" className="border-gray-200 border-y-2" />
+          <Button type="submit" className="font-inter text-lg bg-black text-white font-semibold">Search</Button>
+      </div>
+
+      <div className="pt-8 grid xl:grid-cols-3 md:grid-cols-2 px-20 gap-10">
+        {
+            IdeaData.map((data, index) => (
+                <IdeaElement
+                    imageUrl={data.imageUrl}
+                    href={data.href}
+                    title={data.title}
+                    key={`idea-${index}`}
+                />
+            ))
+            }
+      </div>
   </>
   )
 }
@@ -49,9 +38,9 @@ type IdeaProps = {
 
 const IdeaElement = ({ imageUrl, href, title }: IdeaProps) => {
   return (
-        <Link href={href}>
+      <Link href={href} className="flex flex-col items-center justify-center">
           <Image className="w-[400px] h-[200px] rounded-lg object-cover" alt="" src={imageUrl} />
-          <h3 className='font-bold text-lg text-center'>{title}</h3>
-        </Link>
+          <h3 className='font-bold text-lg'>{title}</h3>
+      </Link>
   )
 }
