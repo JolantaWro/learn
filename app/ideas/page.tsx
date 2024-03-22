@@ -11,8 +11,8 @@ export default function IdeasHome() {
   return (
     <>
      <div className="flex w-full max-w-2xl items-center space-x-2 pt-10 mx-auto">
-          <Input type="text" placeholder="" className="border-gray-200 border-y-2" />
-          <Button type="submit" className="font-inter text-lg bg-black text-white font-semibold">Search</Button>
+          <Input type="text" placeholder="" className="border-gray-200 border-y-2 text-xl font-inter font-medium hover:border-red-800" />
+          <Button type="submit" className="font-inter text-lg bg-black text-white font-semibold hover:bg-gray-300 hover:text-black">Search</Button>
       </div>
 
       <div className="pt-8 grid xl:grid-cols-3 md:grid-cols-2 px-20 gap-10">
