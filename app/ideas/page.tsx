@@ -11,8 +11,8 @@ export default function IdeasHome() {
   return (
     <>
      <div className="flex w-full max-w-2xl items-center space-x-2 pt-10 mx-auto">
-          <Input type="text" placeholder="" className="border-gray-200 border-y-2 text-xl font-inter font-medium hover:border-red-800" />
-          <Button type="submit" className="font-inter text-lg bg-black text-white font-semibold hover:bg-gray-300 hover:text-black">Search</Button>
+          <Input type="text" placeholder="" className="border-gray-200 border-y-2 text-xl font-inter font-medium hover:border-gray-500" />
+          <Button type="submit" className="font-inter text-lg bg-black text-white font-semibold hover:bg-gray-300 hover:text-black focus-visible:bg-none">Search</Button>
       </div>
 
       <div className="pt-8 grid xl:grid-cols-3 md:grid-cols-2 px-20 gap-10">
@@ -23,6 +23,7 @@ export default function IdeasHome() {
                     href={data.href}
                     title={data.title}
                     key={`idea-${index}`}
+                    category={data.category}
                 />
             ))
             }
@@ -33,14 +34,16 @@ export default function IdeasHome() {
 type IdeaProps = {
   imageUrl: any,
   href: string,
-  title: string
+  title: string,
+  category: string
 }
 
-const IdeaElement = ({ imageUrl, href, title }: IdeaProps) => {
+const IdeaElement = ({ imageUrl, href, title, category }: IdeaProps) => {
   return (
       <Link href={href} className="flex flex-col items-center justify-center">
           <Image className="w-[400px] h-[200px] rounded-lg object-cover" alt="" src={imageUrl} />
           <h3 className='font-bold text-lg'>{title}</h3>
+          <p>{category}</p>
       </Link>
   )
 }
