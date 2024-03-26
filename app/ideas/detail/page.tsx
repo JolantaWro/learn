@@ -10,7 +10,7 @@ type InspirationProps = {
   }
 
 
-export default function DetailInspiration({ imageUrl, title, category, description, comment }: InspirationProps) {
+export function DetailInspiration({ imageUrl, title, category, description, comment }: InspirationProps) {
   return (
     <>
       <div className="pt-8 grid xl:grid-cols-3 md:grid-cols-2 px-20 gap-10">
