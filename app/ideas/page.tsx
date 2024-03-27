@@ -24,6 +24,7 @@ export default function IdeasHome() {
                     title={data.title}
                     key={`idea-${index}`}
                     category={data.category}
+                    id={data.id}
                 />
             ))
             }
@@ -35,15 +36,18 @@ type IdeaProps = {
   imageUrl: any,
   href: string,
   title: string,
-  category: string
+  category: string,
+  id: string
 }
 
-const IdeaElement = ({ imageUrl, href, title, category }: IdeaProps) => {
+const IdeaElement = ({ imageUrl, id, href, title, category }: IdeaProps) => {
   return (
-      <Link href={href} className="flex flex-col items-center justify-center">
-          <Image className="w-[400px] h-[200px] rounded-lg object-cover" alt="" src={imageUrl} />
-          <h3 className='font-bold text-lg'>{title}</h3>
-          <p>{category}</p>
-      </Link>
+    <Link href={`/ideas/${id}`}>
+      <div className="flex flex-col items-center justify-center">
+        <Image className="w-[400px] h-[200px] rounded-lg object-cover" alt="" src={imageUrl} />
+        <h3 className='font-bold text-lg'>{title}</h3>
+        <p>{category}</p>
+      </div>
+</Link>
   )
 }
